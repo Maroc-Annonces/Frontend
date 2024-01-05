@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+fixed-z-w {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}

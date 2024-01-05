@@ -1,0 +1,33 @@
+<form id="formRegister" class="p-4 bg-white rounded-lg shadow-md">
+  <div class="mb-4">
+    <label for="firstName" class="block text-gray-700 font-bold mb-2">Name:</label>
+    <input [(ngModel)]="societe.name" required type="text" id="firstName" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+  </div>
+
+  <div class="mb-4">
+    <label for="lastName" class="block text-gray-700 font-bold mb-2">Description:</label>
+    <input [(ngModel)]="societe.description" required type="text" id="lastName" name="description" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+  </div>
+
+  <div class="mb-4">
+    <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+    <input [(ngModel)]="societe.email" required type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+  </div>
+
+  <div class="mb-4">
+    <label for="phone" class="block text-gray-700 font-bold mb-2">Phone:</label>
+    <input [(ngModel)]="societe.phone" required type="tel" id="phone" name="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+  </div>
+
+  <div class="mb-4">
+    <label for="city" class="block text-gray-700 font-bold mb-2">Password:</label>
+    <input [(ngModel)]="societe.login" required type="password" id="city" name="login" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+  </div>
+
+  <div class="mb-4">
+    <label for="image" class="block text-gray-700 font-bold mb-2">Image:</label>
+    <input [(ngModel)]="societe.image" required type="file" id="image" accept="image/*" name="image" class="block shadow appearance-none border rounded w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+  </div>
+
+  <button (click)="register(societe)" type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Postuler</button>
+</form>
